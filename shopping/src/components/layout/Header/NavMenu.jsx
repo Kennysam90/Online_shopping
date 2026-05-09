@@ -1,18 +1,21 @@
+import { Link } from 'react-router-dom'
+
 const links = [
-  ['New In', '/products'],
-  ['Women', '/products?category=women'],
-  ['Men', '/products?category=men'],
-  ['Sale', '/sale'],
-  ['Blog', '/blog'],
+  ['Flash Sale', '/sale'],
+  ['Phones & Tablets', '/products'],
+  ['Appliances', '/products'],
+  ['Health & Beauty', '/products'],
+  ['Official Stores', '/products'],
+  ['Jumia Force', '/about'],
 ]
 
 export default function NavMenu() {
   return (
-    <nav className="nav-menu" aria-label="Primary navigation">
+    <nav className="jumia-nav-menu" aria-label="Primary navigation">
       {links.map(([label, href]) => (
-        <a key={label} href={href}>
+        <Link key={label} to={href}>
           {label}
-        </a>
+        </Link>
       ))}
     </nav>
   )

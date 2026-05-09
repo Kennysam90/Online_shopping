@@ -4,9 +4,11 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <div className="theme-vibrant-energy">
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </div>
   )
 }
 

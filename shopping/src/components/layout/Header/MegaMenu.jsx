@@ -1,14 +1,14 @@
 const groups = {
-  Trending: ['Summer Edit', 'Best Sellers', 'New Arrivals'],
-  Explore: ['Gift Cards', 'Loyalty', 'Referral'],
-  Support: ['Size Guide', 'Shipping Info', 'Returns'],
+  TopDeals: ['Flash Sale', 'Daily Deals', 'Clearance'],
+  Essentials: ['Groceries', 'Home Appliances', 'Phones'],
+  Services: ['Pay on Delivery', 'Pickup Stations', 'Easy Returns'],
 }
 
 export default function MegaMenu() {
   return (
-    <section className="mega-menu">
+    <section className="jumia-mega-menu">
       {Object.entries(groups).map(([title, items]) => (
-        <div key={title} className="mega-menu__group">
+        <div key={title} className="jumia-mega-menu__group">
           <h3>{title}</h3>
           <ul>
             {items.map((item) => (

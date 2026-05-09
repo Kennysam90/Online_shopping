@@ -1,12 +1,12 @@
-const suggestions = ['Running shoes', 'Denim jacket', 'Travel bag', 'Gift cards']
+const suggestions = ['Phone', 'Sneakers', 'Refrigerator', 'Power bank', 'Air fryer', 'Television']
 
 export default function SearchBar() {
   return (
-    <div className="search-bar">
+    <form className="jumia-search-bar" role="search">
       <input
-        className="search-bar__input"
+        className="jumia-search-bar__input"
         type="search"
-        placeholder="Search products, brands, and categories"
+        placeholder="Search products, brands and categories"
         list="site-search-suggestions"
       />
       <datalist id="site-search-suggestions">
@@ -14,6 +14,9 @@ export default function SearchBar() {
           <option key={item} value={item} />
         ))}
       </datalist>
-    </div>
+      <button className="jumia-search-bar__button" type="submit">
+        Search
+      </button>
+    </form>
   )
 }
