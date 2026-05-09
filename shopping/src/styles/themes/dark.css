@@ -1,0 +1,9 @@
+[data-theme='dark'] {
+  --page-bg: #111827;
+  --surface: #17202b;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --line: #334155;
+  --accent: #7dd3fc;
+  --accent-soft: #0f2b33;
+}

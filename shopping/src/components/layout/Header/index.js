@@ -1,0 +1,7 @@
+export { default as Header } from './Header.jsx'
+export { default as NavMenu } from './NavMenu.jsx'
+export { default as MegaMenu } from './MegaMenu.jsx'
+export { default as SearchBar } from './SearchBar.jsx'
+export { default as CartIcon } from './CartIcon.jsx'
+export { default as WishlistIcon } from './WishlistIcon.jsx'
+export { default as AccountIcon } from './AccountIcon.jsx'
