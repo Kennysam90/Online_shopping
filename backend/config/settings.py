@@ -118,3 +118,6 @@ CORS_ALLOWED_ORIGINS = [
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # dev mode only
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
